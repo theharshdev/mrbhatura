@@ -19,33 +19,18 @@
             <span class="text-3xl">🍛</span>
             <span class="text-2xl">Mr. Bhatura</span>
           </a>
-          <div class="hidden md:flex items-center gap-8">
-            <a href="#home" class="relative group">
-              Home
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#about" class="relative group">
-              About
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#menu" class="relative group">
-              Menu
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#location" class="relative group">
-              Location
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#contact" class="relative group">
-              Contact
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#feedback" class="relative group">
-              Feedback
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 transition-all group-hover:w-full"></span>
-            </a>
+          <div
+            id="menuBox"
+            class="hidden lg:flex items-center gap-8 lg:static absolute top-14 left-0 lg:w-fit w-full bg-orange-500 lg:p-0 p-8 lg:flex-row flex-col lg:border-0 border-b border-black"
+          >
+            <a href="#home" class="block navlinks">Home</a>
+            <a href="#about" class="block navlinks">About</a>
+            <a href="#menu" class="block navlinks">Menu</a>
+            <a href="#location" class="block navlinks">Location</a>
+            <a href="#contact" class="block navlinks">Contact</a>
+            <a href="#feedback" class="block navlinks">Feedback</a>
           </div>
-          <div class="hidden md:flex items-center gap-4">
+          <div class="hidden lg:flex items-center gap-4">
             <a href="tel:+919876543210" class="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +57,7 @@
               Order Now 🛒
             </a>
           </div>
-          <button class="md:hidden p-2 text">
+          <button id="menuBoxBtn" class="lg:hidden p-2 text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -1584,5 +1569,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
