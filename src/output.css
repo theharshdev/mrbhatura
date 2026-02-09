@@ -515,6 +515,9 @@
   .resize {
     resize: both;
   }
+  .columns-2 {
+    columns: 2;
+  }
   .columns-3 {
     columns: 3;
   }
@@ -858,6 +861,11 @@
       }
     }
   }
+  .sm\:columns-2 {
+    @media (width >= 40rem) {
+      columns: 2;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -871,6 +879,11 @@
   .md\:col-span-2 {
     @media (width >= 48rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .md\:columns-3 {
+    @media (width >= 48rem) {
+      columns: 3;
     }
   }
   .md\:grid-cols-2 {
@@ -960,6 +973,11 @@
   .lg\:w-fit {
     @media (width >= 64rem) {
       width: fit-content;
+    }
+  }
+  .lg\:columns-4 {
+    @media (width >= 64rem) {
+      columns: 4;
     }
   }
   .lg\:grid-cols-4 {
