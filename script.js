@@ -16,7 +16,9 @@ menuBoxBtn.addEventListener("click", () => {
 
 navlinks.forEach((navlink) => {
   navlink.addEventListener("click", () => {
-    menuBox.style.display = "none";
-    menuisopen = false;
+    if (window.innerWidth < 1024) {
+      menuBox.style.display = "none";
+      menuisopen = false;
+    }
   });
 });
